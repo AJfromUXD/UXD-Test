@@ -60,3 +60,14 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+/* iPhone safe area (notch + home indicator) */
+.safe-area-pb {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Prevent iOS overscroll bounce on fixed layouts */
+html, body {
+  overscroll-behavior: none;
+  height: 100%;
+}
